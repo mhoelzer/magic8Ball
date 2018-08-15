@@ -5,12 +5,13 @@
 :root {
     --fontStandard: PiratesBay, Georgia, 'Times New Roman';
 }
-/* body, html {
-    height: 100%;
-} */
+
 body{
     font-family: var(--fontStandard);
     font-size: 150%;
+    background: url(/images/backgroundUse.jpg) no-repeat center center fixed;
+    background-size: cover;
+    overflow:hidden;
 }
 
 h1, h4, p {
