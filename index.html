@@ -9,26 +9,33 @@
     </head>
 
     <body>
-        <h1>MAGIC 8 BALL</h1>
-        <h4>Pirate and Elizabethan/Early Modern English Edition</h4>
+        <div id="startBall">
+            <p>SHAKE the SPHERE for Future, MATEY</p>
+            <img id="startBall" src="/images/ball-back.png" onclick="replace();return false">
+        </div>
 
-        <img src="/images/ShakespeareWithPatch.png" alt="" srcset="">
+        <div id="mainStuff" style="display:none">
+            <h1>MAGIC 8 BALL</h1>
+            <h4>Pirate and Elizabethan/Early Modern English Edition</h4>
 
-        <br>
-        <section id="questionArea">
-            <p>ENTER A QUESTION IN THE QUESTION BOX</p>
-            <textarea rows="10" cols="60" id="questionInput"></textarea>
+            <img id="ShakespeareWithPatch" src="/images/ShakespeareWithPatch.png" alt="" srcset="" onclick="replaceBack(); return false">
+
             <br>
-            <button id="ballButt">Speaketh t' th' Magic 8 Ball!</button>
-            <div id="ballSpeaketh"></div>
-        </section>
+            <section id="questionArea">
+                <p>ENTER A QUESTION IN THE QUESTION BOX</p>
+                <textarea rows="10" cols="60" id="questionInput"></textarea>
+                <br>
+                <button id="ballButt">Speaketh t' th' Magic 8 Ball!</button>
+                <div id="ballSpeaketh"></div>
+            </section>
 
-        <script src="index.js"></script>
-        
-        <footer>
-            <li><a href="https://lingojam.com/EnglishtoShakespearean">https://lingojam.com/EnglishtoShakespearean</a></li>
-            <li><a href="https://funtranslations.com/pirate">https://funtranslations.com/pirate</a></li>
-            <li><a href="https://www.syddware.com/cgi-bin/pirate.pl">https://www.syddware.com/cgi-bin/pirate.pl</a></li>
-        </footer>
+            <script src="index.js"></script>
+            
+            <footer>
+                <li><a href="https://lingojam.com/EnglishtoShakespearean">https://lingojam.com/EnglishtoShakespearean</a></li>
+                <li><a href="https://funtranslations.com/pirate">https://funtranslations.com/pirate</a></li>
+                <li><a href="https://www.syddware.com/cgi-bin/pirate.pl">https://www.syddware.com/cgi-bin/pirate.pl</a></li>
+            </footer>
+        </div>
     </body>
 </html>
