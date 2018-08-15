@@ -5,7 +5,9 @@
 :root {
     --fontStandard: PiratesBay, Georgia, 'Times New Roman';
 }
-
+/* body, html {
+    height: 100%;
+} */
 body{
     font-family: var(--fontStandard);
     font-size: 150%;
@@ -15,16 +17,30 @@ h1, h4, p {
     text-align: center;
 }
 
-
-img#startBall:hover {
-    transition: transform 2s;
-    transform: rotate(360deg);
+#groupForStartBall {
+    margin: 0;
 }
+#startBall {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+}
+img#startBallPic:hover {
+    transition: transform 1.5s;
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+
 
 img#ShakespeareWithPatch{
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+img#ShakespeareWithPatch:hover{
+    cursor: pointer;
 }
 
 

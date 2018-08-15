@@ -3,7 +3,7 @@ function replace() {
     document.getElementById("mainStuff").style.display="block"; 
 }
 function replaceBack() { 
-    document.getElementById("startBall").style.display="block"; 
+    document.getElementById("startBall").style.display="flex"; 
     document.getElementById("mainStuff").style.display="none"; 
 }
 
