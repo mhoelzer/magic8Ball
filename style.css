@@ -30,7 +30,7 @@ h1, h4, p {
     height: 98vh;
 }
 img#startBallPic {
-    content: url(./images/ball.png);
+    content: url(./images/ballWord.png);
 }
 img#startBallPic:hover {
     animation: shake 0.5s;
