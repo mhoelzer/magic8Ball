@@ -9,11 +9,15 @@
     </head>
 
     <body>
-        <audio hidden="true" autoplay loop controls><source src="./images/music.mp3"></audio>
+        <audio hidden="true" autoplay loop>
+            <source src="./images/bgMusic.mp3" type="audio/mp3">
+        </audio>
+        <iframe src="./images/bgMusic.mp3" allow="autoplay loop" style="display:none" id="iframeAudio"></iframe> 
+            <!-- ^^^ in case chrome decides to be weird -->
         <div id="groupForStartBall">
             <div id="startBall">
                 <img id="startBallPic" onclick="replace();return false">
-                <p id="startText">SHAKE the SPHERE for Future, MATEY</p>
+                <p id="startText">SHAKE the SPHERE for Your Future, MATEY</p>
             </div>
         </div>
 
