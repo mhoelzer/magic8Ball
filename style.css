@@ -11,7 +11,7 @@ body{
     font-size: 150%;
     background: url(./images/backgroundUse.jpg) no-repeat center center fixed;
     background-size: cover;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 h1, h4, p {
@@ -19,22 +19,37 @@ h1, h4, p {
     color: #8E070D;
 }
 
-#groupForStartBall {
-    margin: 0;
-}
+
 #startBall {
+    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 98vh;
 }
-img#startBallPic {
-    content: url(./images/ballWord.png);
+.block {
+    background: url("./images/ballCorrectSize.png") no-repeat center center;
+    position: relative;
+    margin: 25px;
+    width: 320px;
+    height: 320px;
+    padding: 1em;
 }
-img#startBallPic:hover {
+.overlay {
+    opacity: 0;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 105%;
+    height: 105%;
+    transition: opacity .75s ease-in-out;
+    background: url("./images/ballWord.png") no-repeat center center;
+}
+.block:hover .overlay {
+    opacity: 1;
     animation: shake 0.5s;
-    animation-iteration-count: infinite;
+    animation-iteration-count:infinite;
 }
 @keyframes shake {
     0% { transform: translate(1px, 1px) rotate(0deg); }

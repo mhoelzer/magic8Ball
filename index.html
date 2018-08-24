@@ -14,12 +14,13 @@
         </audio>
         <iframe src="./images/bgMusic.mp3" allow="autoplay loop" style="display:none" id="iframeAudio"></iframe> 
             <!-- ^^^ in case chrome decides to be weird -->
-        <div id="groupForStartBall">
-            <div id="startBall">
-                <img id="startBallPic" onclick="replace();return false">
-                <p id="startText">SHAKE the SPHERE for Ye Future, MATEY</p>
-            </div>
+        <div id="startBall">
+                <div class="block" onclick="replace();return false">
+                        <div class="overlay"></div>
+                    </div>
+                    <p id="startText">SHAKE the SPHERE for Ye Future, MATEY</p>
         </div>
+       
 
         <div id="mainStuff" style="display:none">
             <h1>MAGIC 8 BALL</h1>
